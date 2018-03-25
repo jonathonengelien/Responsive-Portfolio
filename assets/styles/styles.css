@@ -134,9 +134,9 @@ a:-webkit-any-link {
 .fa-stack-overflow{
     color:white;
     background-color: orange;
-    border-radius: 5px;
     font-size: 60px;
     padding: 5px 5px 0 5px;
+    border-radius: 5px;
 }
 
 /* footer */
@@ -264,13 +264,14 @@ border: 0 none;
 /******** Media Inquiries ********/
 
 @media screen and (max-width: 980px) {
-    #masthead {
-        float: left;
+    .masthead {
+        margin: 100%;
+        margin-top: 20px;
+        top: 0;
     }
-
-    li a {
-        padding: 0 10px;
+    li a {  
         margin-top: 35px;
+        padding: 0 10px;
     }
 
     .container { 
@@ -279,22 +280,20 @@ border: 0 none;
     }
 
     .main-container {
-        width:60%; 
         float:left;
-         margin: 10px auto;
+        margin: 10px auto;
+        width:60%; 
     }
     
     .auth-image {
         height:auto;
         width:85%; 
         margin: 25px 30px 25px 30px;
-        border-radius: 3px;
     }
 
     .side-bar {
-        width:35%; 
-        float:left;
-        margin: 10px 0 0 25px;
+        width: 35%; 
+        float: right;
     }
 
     .side-bar h1 {
@@ -302,12 +301,12 @@ border: 0 none;
     }
 
     .work img {
-        height:300px;width:90%; 
         margin:2.5% 5%;
+        height:300px;width:90%; 
     }
 
     .work h3 { 
-        margin-top: 225px;
+        margin-top: 200px;
     } 
     
 
@@ -316,55 +315,68 @@ border: 0 none;
 
 
 @media screen and (max-width: 768px) {
-    #masthead{ 
-        float:left; 
-        margin:0 80px 0 25px; 
-        font-size:150%;
+    #masthead {
+        top: 0;
     }
-    li a{ 
-        margin-top: 35px; 
-        float:right;
+
+    #logo{ 
+        width:100%; 
+        margin:0;padding: 0;
+    }
+    li {
+        margin-bottom: 15px;
+    }
+
+    li a {
+        padding: 0 30px;
+    }
+
+    nav { 
+        float:none; 
+        clear:left;display:block;
+        text-align: center;
+    
     }
     
-    .container{ 
-        width:92%; 
+    .auth-image {
+        height:auto; 
+        width:40%; 
+        margin: 20px 3%; 
+        border-radius: 3px;
+    }
+
+    .container { 
+        width:90%; 
         margin: 10px auto;
     }
 
-    #main-container{
+    .main-section {
+        width:100%; 
+        float:left; 
+        margin: 50px auto;
+    }
+
+    .side-bar {
         width:100%; 
         float:left; 
         margin: 10px auto;
-    }
-    .auth-image {
-        float:left; 
-        height:250px; 
-        width:325px; 
-        margin: 20px; 
-        border-radius: 3px;
-    }
-    .main-section p{
-        margin: 20px 20px;
-    }
-    .side-bar{
+    } 
+
+    .work img {
+        height:300px;
         width:100%; 
-        float:left; 
-        margin: 10px auto;
-    
+        margin: 0px;
     }
-    .work img{
-        height:200px;
-        width:46%; 
-        margin:2%;
-    }
-    .work h3{
+
+    .work h3 {
         height: 4px;
         padding-top: 20px;
         padding-bottom: 35px;
         margin-top: 125px;
         font-size: 75%;
     }  
-    .fa-stack-overflow{
+
+    .fa-stack-overflow {
         width:60px;
         height:60px;
         font-size: 60px;
@@ -409,7 +421,7 @@ border: 0 none;
     .main-section {
         width:100%; 
         float:left; 
-        margin: 10px auto;
+        margin: 50px auto;
     }
 
     .side-bar {
@@ -419,9 +431,9 @@ border: 0 none;
     } 
 
     .work img {
-        height:250px;
-        width:90%; 
-        margin:2.5% 5%;
+        height:100%;
+        width:100%; 
+        margin: 0;
     }
     
     .work h1 {
